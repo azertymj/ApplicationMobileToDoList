@@ -1,0 +1,38 @@
+<!-- res/layout/fragment_theme.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez un thème :"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Utilisez des boutons radio pour les options de thème -->
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thème Clair" />
+
+        <RadioButton
+            android:id="@+id/radioDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thème Sombre" />
+
+        <!-- Ajoutez d'autres options de thème si nécessaire -->
+    </RadioGroup>
+
+</LinearLayout>
